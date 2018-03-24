@@ -1,0 +1,164 @@
+main {
+  background-color: #f5f5f5;
+}
+
+.media {
+  background-color: #fff;
+  border: 0.1rem solid #469bc7;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  font-size: 1.1rem;
+}
+
+li:not(:last-of-type) {
+  padding-bottom: 0.75rem;
+}
+
+.noFlex {
+  display: block;
+}
+
+.marginZeroAuto {
+  margin: 0 auto;
+}
+
+.media-heading {
+  font-weight: 200;
+}
+
+.media-body {
+  margin-right: 2rem;
+}
+
+.media-left {
+  padding-right: 1rem;
+}
+
+.float-top-right {
+  font-size: 2rem;
+  font-weight: 200;
+  right: 1rem;
+  top: 0;
+  position: absolute;
+}
+
+.float-bottom-right {
+  font-size: 1.75rem;
+  font-weight: 200;
+  right: 1rem;
+  bottom: 0.5rem;
+  position: absolute;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.category {
+  background-color: #fff;
+  border: 0.05rem solid #469bc7;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 200;
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.question {
+  width: 100%;
+  padding-bottom: 2rem;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+
+nav {
+  background-color: #469bc7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+}
+
+form {
+  display: inline;
+}
+
+.form-control {
+  width: 100%;
+  display: inline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'firstName'
+    'lastName'
+    'emailAddress'
+    'password'
+    'description';
+  grid-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'firstName lastName'
+      'emailAddress password'
+      'description description';
+  }
+}
+
+.fullWidth {
+  margin: 0 auto;
+  min-width: 100%;
+  background-color: #469bc7;
+}
+
+#firstName {
+  grid-area: firstName;
+}
+
+#lastName {
+  grid-area: lastName;
+}
+
+#emailAddress {
+  grid-area: emailAddress;
+}
+
+#password {
+  grid-area: password;
+}
+
+#description {
+  grid-area: description;
+  padding-bottom: 10rem;
+}
+
+footer {
+  background-color: #469bc7;
+  min-height: 5rem;
+  text-align: center;
+  color: white;
+}
